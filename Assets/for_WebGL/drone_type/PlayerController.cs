@@ -7,14 +7,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform playerCamera = null;
     
     [SerializeField] float mouseSensitivity = 3.0f;
-    [SerializeField] float keyRotSensitivity = 3.0f;
-    [SerializeField] float walkSpeed = 6.0f;
-    [SerializeField] float vertSpeed = 6.0f;
+    [SerializeField] float keyRotSensitivity = 1.0f;
+    [SerializeField] float walkSpeed = 16.0f;
+    [SerializeField] float vertSpeed = 16.0f;
     
     [SerializeField] bool lockCursor = true;
     [SerializeField] bool invertedY = false;
     
-    float cameraPitch = 0.0f;
+    float cameraPitch = 25.0f;
     
     CharacterController controller = null;
     
