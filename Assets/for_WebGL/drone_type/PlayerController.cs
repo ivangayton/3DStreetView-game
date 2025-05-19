@@ -48,13 +48,13 @@ public class PlayerController : MonoBehaviour
     void UpdateRotation()
     {
     	float yaw = 0.0f;
-	if(Input.GetKey("a")) yaw = keyRotSensitivity;
-	if(Input.GetKey("d")) yaw = -keyRotSensitivity;
+	if(Input.GetKey("d")) yaw = keyRotSensitivity;
+	if(Input.GetKey("a")) yaw = -keyRotSensitivity;
 	yaw += Input.GetAxis("Mouse X") * mouseSensitivity;
 	transform.Rotate(Vector3.up * yaw);
 	
-	if(Input.GetKey("e")) cameraPitch -= keyRotSensitivity;
-	if(Input.GetKey("q")) cameraPitch += keyRotSensitivity;
+	if(Input.GetKey("q")) cameraPitch -= keyRotSensitivity;
+	if(Input.GetKey("e")) cameraPitch += keyRotSensitivity;
 	cameraPitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;
 	cameraPitch = Mathf.Clamp(cameraPitch, -85.0f, 85.0f);
 	playerCamera.localEulerAngles = Vector3.right * cameraPitch;	
