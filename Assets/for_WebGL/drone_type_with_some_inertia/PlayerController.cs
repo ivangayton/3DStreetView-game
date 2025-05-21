@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
 	//{
 	//    Application.Quit();
 	//}
+	// yinvert not used in drone-type setup
 	if(Input.GetKeyUp("y"))
 	{
 	    yInvert *= -1;
@@ -65,9 +66,9 @@ public class PlayerController : MonoBehaviour
 	yaw *= d;
 	transform.Rotate(Vector3.up * yaw * Time.deltaTime);
 	
-	if(Input.GetKey("q")) pitch -= keyRotSensitivity * yInvert;
-	if(Input.GetKey("e")) pitch += keyRotSensitivity * yInvert;
-	pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity * yInvert;
+	if(Input.GetKey("q")) pitch -= keyRotSensitivity;
+	if(Input.GetKey("e")) pitch += keyRotSensitivity;
+	pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;
 	pitch *= d;
 	cameraPitch += pitch * Time.deltaTime;
 	cameraPitch = Mathf.Clamp(cameraPitch, -15.0f, 90.0f);
