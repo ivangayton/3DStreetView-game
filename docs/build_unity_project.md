@@ -14,7 +14,7 @@
 - In the ```GameObject``` menu, choose ```Create Empty```. Name it "player."
 - Select the player in the Hierarchy tab, and in the Inspector tab, press ```Add Component```. Search for ```Character Controller``` and add it. You should now see a wireframe Minion-shaped capsule appear in the Scene tab.
 - Click back on the player in the Hierarchy tab, right-click, and select ```Camera```. A new mini-window should appear showing the view from the camera, which will be from the point of view of the player capsule (if your mesh is positioned in view of the camera, you'll see it, otherwise it'll just show a blue sky and grey-brown blank ground).
-- We can now remove the default camera. Right-click on the ```Main Camera``` object in the Heirarchy pane, and delete it. We don't need it since we have a camera on the player.
+- We can now remove the default camera. Right-click on the ```Main Camera``` object in the Hierarchy pane, and delete it. We don't need it since we have a camera on the player.
 - With the camera selected, set the Y position in the Inspector to 1 (that'll just put the camera at the top of the capsule, which will make sense for a human-esque point of view).
 
 ### Add a script to control the player and camera
@@ -56,7 +56,7 @@ Unity has a Canvas element, which instead of being part of the 3D world, is like
 
 First, paste the file ```WASD game keyboard instructions for 3DStreetView_semi-translucent.png``` into the Assets directory. 
 
-Back in Unity, select Gameobject -> UI -> Canvas creates an empty Canvas and an EvenSystem. Select the Canvas object in the Hierarchy pane, and drag the CanvasController to the empty space in the Inspector pane below it.
+Back in Unity, select Gameobject -> UI -> Canvas creates an empty Canvas and an EventSystem. Select the Canvas object in the Hierarchy pane, and drag the CanvasController to the empty space in the Inspector pane below it.
 
 Now hit the 2D button in the Scene pane, and zoom out a ludicrous amount until you see the whole Canvas, which will be a giant white square that makes the mesh look microsopic. 
 
