@@ -21,7 +21,10 @@ public class PlayerController : MonoBehaviour
     float forward = 0.0f;
     float yaw = 0.0f;
     float pitch = 0.0f;
-    float yInvert = 1;
+
+    // Switches
+    float yInvert = 1; // Not a bool because we use it to multiply a float
+    bool gameMode = false;
     
     CharacterController controller = null;
     
@@ -53,6 +56,10 @@ public class PlayerController : MonoBehaviour
 	if(Input.GetKeyUp("y"))
 	{
 	    yInvert *= -1;
+	}
+	if(Input.GetKeyUp("g"))
+	{
+	    gameMode ^= true;
 	}
     }
     

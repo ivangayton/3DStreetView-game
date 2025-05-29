@@ -54,7 +54,7 @@ Some people (especially those of us raised on flight simulators, or more recentl
 ### Instructions Canvas
 Unity has a Canvas element, which instead of being part of the 3D world, is like a flat transparency just in front of the camera.  We'll put the instructions on that.
 
-First, paste the file ```WASD game keyboard instructions for 3DStreetView_semi-translucent.png``` into the Assets directory. 
+First, paste the relevant PNG into the Assets directory, as well as the ```CanvasController.cs``` script. 
 
 Back in Unity, select Gameobject -> UI -> Canvas creates an empty Canvas and an EventSystem. Select the Canvas object in the Hierarchy pane, and drag the CanvasController to the empty space in the Inspector pane below it.
 
